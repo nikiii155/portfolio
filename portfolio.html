@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+   <meta charset=" UTF=3">
+   <meta http- equiv="x-UA - compatiable" content="IE=edge">
+   <meta name="portfolio" content="width=device-width, initial- scale=1.0">
+   <title> Nikita vishwakrma web devloper</title>
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+
+
+
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+   }
+
+   body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'poppins', sans-serif;
+   }
+
+   nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(21, 21, 62);
+      font-size: 1rem;
+
+
+   }
+
+   nav ul {
+      display: flex;
+      justify-content: center;
+   }
+
+   nav ul li {
+      list-style: none;
+      margin: 0 23px;
+      font-weight: bold;
+   }
+
+   nav ul li a {
+      text-decoration: none;
+      color: whitesmoke;
+   }
+
+   nav ul li a:hover {
+      color: rgb(83, 244, 244);
+      font-size: 1.09rem;
+
+
+   }
+
+   .firstsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 60px 0;
+      align-items: center;
+      font-size: 2rem;
+
+   }
+
+   .firstsection>div {
+
+      width: 35%;
+      margin: 60px 0;
+      font-size: 2rem;
+      margin: 10px 0;
+   }
+
+   .purple {
+      color: rgb(15, 240, 240);
+      font-size: 3rem;
+   }
+
+   .leftsection {
+      font-size: 2rem;
+   }
+
+   .leftsection .socailmedia,
+   i {
+
+
+      margin-left: 50px;
+      margin-top: 30px;
+      letter-spacing: -30px;
+      color: white;
+
+   }
+
+   .rightsection img {
+      width: 80%;
+      margin: 30px 0;
+
+   }
+
+   .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      height: 85vh;
+
+
+   }
+
+   .secondsection .box {
+      background: white;
+      width: 60vw;
+      height: 2px;
+      margin: 55px 0;
+      display: flex;
+
+   }
+
+   .text-gray {
+      color: gray;
+   }
+
+   .secondsection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 150px;
+
+   }
+
+   .image-top {
+      width: 30px;
+      position: relative;
+      top: -35px;
+      left: -11px;
+      max-width: 50px;
+
+   }
+
+   .vertical-tittle {
+      position: relative;
+      top: 100px;
+      width: 40px;
+      font-size: 18px;
+      color: rgb(63, 251, 251);
+
+
+   }
+
+   .vertical-desc {
+
+      position: relative;
+      top: 120px;
+      color: gray;
+      width: 120px;
+      font-size: 14px;
+      color: white;
+
+   }
+
+   .thirdsection {
+      height: 80vh;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .about_container {
+      width: 100%;
+      padding: 50px 8%;
+   }
+
+   .about_container .about_contents {
+      display: grid;
+      grid-template-columns: 2fr 5fr;
+      grid-gap: 70px;
+   }
+
+   .about_contents .imagesection {
+      position: relative;
+      min-width: 300px;
+      height: 380px;
+   }
+
+   .imagesection .about-image {
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+   }
+
+   .about_contents .imagesection after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      outline: 3px solid white;
+      top: 15px;
+      left: 15px;
+      z-index: 2;
+
+   }
+
+   .infosection h1 {
+      color: white;
+      font-size: 30px;
+      font-family: Helvetica;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 5px;
+      position: relative;
+   }
+
+   .infosection h1::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 110;
+      left: 0;
+
+   }
+
+   .infosection h1::after {
+      content: '';
+      position: absolute;
+      width: 40%;
+      height: 3px;
+      top: calc(110% -1px);
+      left: 0px;
+
+   }
+
+   .infosection h2 {
+      font-family: Helvetica;
+      font-size: 20px;
+      font-weight: 600;
+      color: rgb(63, 251, 251);
+      padding: 14px 0px 1px;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+   }
+
+   .infosection p {
+      font-size: 18px;
+      line-height: 1.2;
+      text-align: justify;
+      padding-bottom: 8px;
+      color: white;
+   }
+
+   .personalinfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px 20px;
+      margin-top: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid white;
+   }
+
+   .personalinfo div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+   }
+
+   .personalinfo div span {
+      letter-spacing: 1px;
+      color: rgb(63, 251, 251);
+   }
+
+   .infosection button {
+      min-width: 150px;
+      padding: 8px 18px;
+      border: 1px solid white;
+      border-radius: 25px;
+      font-size: 18px;
+      background-color: transparent;
+      color: rgb(63, 251, 251);
+      letter-spacing: 1px;
+      transition: all 0.4s;
+      cursor: pointer;
+      margin-top: 20px;
+
+   }
+
+   .infosection button:hover {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+
+   }
+
+   .fourthsection {
+      height: 80vh;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px 80px;
+   }
+
+   .fourthsection h1 {
+      color: white;
+      font-size: 30px;
+      font-family: Helvetica;
+      text-transform: uppercase;
+      padding-left: 500px;
+      margin-bottom: 5px;
+      position: relative;
+      display: grid;
+      align-items: center;
+
+   }
+
+
+
+   .fourthsection .subject {
+      font-size: 17px;
+      font-weight: thin;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+
+   .progress_bar {
+      width: 80%;
+      height: 20px;
+      background-color: white;
+      padding: 4px 6px;
+      border-top: 1px solid rgb(3, 3, 3);
+      border-bottom: 1 px solid rgb(7, 6, 6);
+      border-radius: 15px;
+
+   }
+
+   .progress_line {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(63, 251, 251);
+      box-shadow: -1px -1px 2px #222222,
+         1px 1px 2px #111111;
+      border-radius: 15px;
+   }
+
+   .progress_line::after {
+      position: absolute;
+      content: attr(value);
+      top: -35px;
+      right: 0px;
+      transform: translateX(-50%);
+      font-size: 17px;
+   }
+
+   .fifthsection {
+      height: 80vh;
+      width: 100%;
+
+   }
+
+   .container {
+      margin-top: 60px;
+      width: 85%;
+      background: rgb(63, 251, 251);
+      border-radius: 6px;
+      padding: 20px 60px 30px 40px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      max-width: 600PX;
+      margin-left: 400px;
+   }
+
+   .container .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .container .content .left-side {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      position: relative;
+      padding-left: 00px;
+   }
+
+   .content .left-side::before {
+      content: '';
+      position: absolute;
+      height: 70%;
+      width: 2px;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #afafb6;
+   }
+
+   .content .left-side .details {
+      margin: 14px;
+      text-align: center;
+      color: black;
+   }
+
+   .content .left-side .details i {
+      font-size: 30px;
+      color: #3e2093;
+      margin-bottom: 10px;
+   }
+
+   .content .left-side .details .topic {
+      font-size: 18px;
+      font-weight: 500;
+   }
+
+   .content .left-side .details .text-one,
+   .content .left-side .details .text-two {
+      font-size: 14px;
+      color: #3e2093;
+
+   }
+
+   .container .content .right-side {
+      width: 75%;
+      margin-left: 75px;
+   }
+
+   .content .right-side .topic-text {
+      font-size: 23px;
+      font-weight: 600;
+      color: #3e2093;
+   }
+
+   .right-side .input-box {
+      height: 50px;
+      width: 100%;
+      margin: 12px 0;
+   }
+
+   .right-side .input-box,
+   p {
+      color: black;
+   }
+
+   .right-side .input-box input,
+   .right-side .input-box textarea {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background: #F0F1F8;
+      border-radius: 6px;
+      padding: 0 15px;
+      resize: none;
+   }
+
+   .right-side .message-box {
+      min-height: 110px;
+   }
+
+   .right-side .input-box textarea {
+      padding-top: 6px;
+      padding-left: 25px;
+      font-family: sans-serif;
+   }
+
+   .right-side .button {
+      display: inline-block;
+      margin-top: 12px;
+   }
+
+   .right-side .button input[type="button"] {
+      color: #fff;
+      font-size: 18px;
+      outline: none;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background: #3e2093;
+      cursor: pointer;
+      transition: all 0.3s ease;
+   }
+
+   .button input[type="button"]:hover {
+      background: #5029bc;
+   }
+
+   @media (max-width: 950px) {
+      .container {
+         width: 90%;
+         padding: 30px 40px 40px 35px;
+      }
+
+      .container .content .right-side {
+         width: 75%;
+         margin-left: 55px;
+      }
+   }
+
+   @media (max-width: 820px) {
+      .container {
+         margin: 40px 0;
+         height: 100%;
+      }
+
+      .container .content {
+         flex-direction: column-reverse;
+      }
+
+      .container .content .left-side {
+         width: 100%;
+         flex-direction: row;
+         margin-top: 40px;
+         justify-content: center;
+         flex-wrap: wrap;
+      }
+
+      .container .content .left-side::before {
+         display: none;
+      }
+
+      .container .content .right-side {
+         width: 100%;
+         margin-left: 0;
+      }
+   }
+   
+
+   
+</style>
+
+<body>
+   <header>
+      <nav>
+         <div class="leftsection"> NIKITA'S PORTFOLIO</div>
+         <div class="rightsection">
+            <ul>
+               <li><a href="/">HOME</a></li>
+               <li><a href="/">ABOUT</a></li>
+               <li><a href="/">SKILLS</a></li>
+               <li><a href="/">PROJECT</a></li>
+               <li><a href="/"> RESUME</a></li>
+               <li><a href="/">CONTACT ME</a></li>
+            </ul>
+
+         </div>
+      </nav>
+
+
+   </header>
+   <main>
+
+      <section class="firstsection">
+         <div class="leftsection">
+            Hii, My Name is <span class="purple">Nikita Vishwakrma</span>
+            <div> and I am Web Developer</div>
+            <div class="socialmedia">
+
+               <i class="fa-brands fa-square-whatsapp"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-facebook"></i>
+            </div>
+         </div>
+         </div>
+         <div class="rightsection">
+            <img src="bg.png.png">
+         </div>
+      </section>
+
+
+      <section class="secondsection">
+         <span class=" text-gray"> What I have Done so far </span>
+         <h1>QUALIFICATION</h1>
+         <div class="box">
+
+            <div class="vertical">
+               <img class="image-top" src="hight school.2.jpg" alt="">
+
+
+               <div class="vertical-tittle">
+                  HIGHT SCHOOL(2018-19)
+               </div>
+               <div class="vertical-desc">
+                  I am completed my class 10th since 2018-19. and i got a 87% by madhaypradessh board Examination.
+
+               </div>
+            </div>
+            <div class="vertical">
+               <img class="image-top" src="higher secondary.jpg" alt="">
+               <div class="vertical-tittle">
+                  HIGHER SECONDAY SCHOOL (2020-21)
+               </div>
+               <div class="vertical-desc">
+                  i'm completed my class 12th since 2020-21 and i got 85% by madhypradesh board Examination.
+               </div>
+            </div>
+            <div class="vertical">
+               <img class="image-top" src="for clg.png" alt="">
+               <div class="vertical-tittle">
+                  Bachalore of computer application(BCA)
+               </div>
+               <div class="vertical-desc">
+                  i will complete my graduation since 2022-24. by makhanlal chaturdevi univercity of bhopal and my
+                  institude name is digital managment acedamy chatarput mp
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <section class="thirdsection">
+         <div class="about_container">
+            <div class=" about_contents">
+               <section class="imagesection">
+                  <img class="about-image" src="about me 4.jpg">
+               </section>
+               <section class="infosection">
+                  <h1> ABOUT ME</h1>
+                  <h2> PROFFISIONAL WEB DEVELOPER </h2>
+                  <P> I'M a web Developer and just now i completed my graduation in this year.<br> I completed my 10th
+                     from
+                     mp borad
+                     Examination since 2018-19 with 87%.</P>
+                  And<br>I completed my class 12th from mp board Examination since 2020-21 with 85%.
+                  <p> After it I joined BCA(Bachalore of computer) in this field i learn so many subject
+                     and during a graduation<br> i completed so many certificate like Micro soft office, html with css,
+                     and I have a communication skills.<br>
+                     I have certificate with gujrat technology univercity.</p>
+                  <div class="personalinfo">
+                     <div><span>Name</span><span>Nikita Vishwakarma</span></div>
+                     <div><span>Age</span><span>20year</span></div>
+                     <div><span>Email</span><span> nikii154@gmail.com</span></div>
+                     <div><span>Address</span><span>Chhatarpur<br> MP india</span></div>
+
+                  </div>
+                  <div class="rebutton">
+                     <button> RESUME</button>
+                  </div>
+            </div>
+      </section>
+      <section class="fourthsection">
+         <h1> MY SKIILS </h1>
+         <br>
+         <div class="skills">
+            <div class="subject"> Communiaction</div>
+            <div class="progress_bar">
+               <div class="progress_line" value="94%" style="max-width: 94%">
+               </div>
+            </div>
+         </div>
+         <div class="skills">
+            <div class="subject"> Web development</div>
+            <div class="progress_bar">
+               <div class="progress_line" value="75%" style="max-width: 75%">
+               </div>
+            </div>
+         </div>
+         <div class="skills">
+            <div class="subject"> web designing</div>
+            <div class="progress_bar">
+               <div class="progress_line" value="73%" style="max-width: 73%">
+               </div>
+            </div>
+         </div>
+         <div class="skills">
+            <div class="subject"> Creativity</div>
+            <div class="progress_bar">
+               <div class="progress_line" value="85%" style="max-width: 85%">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="fifthsection">
+
+         <div class="container">
+            <div class="content">
+               <div class="left-side">
+                  <div class="address details">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <div class="topic">Address</div>
+                     <div class="text-one">Mahal Road </div>
+                     <div class="text-two">ChhatarpuR Mp india</div>
+                  </div>
+                  <div class="phone details">
+                     <i class="fas fa-phone-alt"></i>
+                     <div class="topic">Phone</div>
+                     <div class="text-one">+0098 9893 5647</div>
+                     <div class="text-two">+0096 3434 5678</div>
+                  </div>
+                  <div class="email details">
+                     <i class="fas fa-envelope"></i>
+                     <div class="topic">Email</div>
+                     <div class="text-one">nikiivis@gmail.com</div>
+                     <div class="text-two">nikitavish@gmail.com</div>
+                  </div>
+               </div>
+               <div class="right-side">
+
+                  <div class="topic-text">Send Me a message</div>
+                  <p>If you are interested to talk with me so fill this form and i will connect with you
+                     thank you for connact with Me .</p>
+                  <form action="#">
+                     <div class="input-box">
+                        <input type="text" placeholder="Enter your name">
+                     </div>
+                     <div class="input-box">
+                        <input type="text" placeholder="Enter your email">
+                     </div>
+                     <div class="input-box message-box">
+                        <textarea class="txt" placeholder="Type your Massage" cols="6" rows="4"></textarea>
+
+                     </div>
+                     <div class="button">
+                        <input type="button" value="Send Now">
+                     </div>
+                  </form>
+
+               </div>
+
+            </div>
+
+         </div>
+         </section>
+
+         <HR>
+            <P>THANK YOU FOR VISITED MY POSRTFOLIO</P>
+         
+            
+
+      
+      
+
+
+
+   </main>
+</body>
+
+</html>
